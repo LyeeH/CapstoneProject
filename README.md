@@ -1,2 +1,2 @@
 # CapstoneProject
-The Capstone Project for a Python GUI EDA tool
+The Capstone Project for a Python GUI EDA development tool.
