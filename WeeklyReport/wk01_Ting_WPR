@@ -1,0 +1,20 @@
+WeeklyReport
+Jan 14, 2018	Week1	Ting Wang
+
+Summary:
+This week I focused on creating a GUI Window to input a destination file and changing the input data to xls file. I tried some small
+example to understand the function of relative command. During the process, I get in the trouble due to some trivial problem. It wasted 
+some time. I searched some hlepful example in the web, which follows the version of Python2, but not suit for Python3.
+For example, the individual module tkFileDialog for Python2 had changed to tkinter.filedialog. When you want to use the command, you must 
+write in the front of code like 'from tkinter import filedialog'.
+
+Issue:
+1. The speed of learning is too slow. Thanks to Linyi's code, it helps me focus on some special command.
+2. The helpful material I search is often not suit the version of Python I am using.
+3. How to read data from a xls file and create a table in the Gui window. It is the problem I will focus on next week.  
+
+Data:
+I just tried some example to be familar with command. There is not a complete working code.
+
+Next Week:
+Try to read data from a xls file and create a table in the Gui window and find the methon to hightlight the elements of table.
