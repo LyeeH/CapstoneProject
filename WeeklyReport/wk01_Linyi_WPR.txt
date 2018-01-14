@@ -1,0 +1,21 @@
+WeeklyReport
+Jan 13, 2018	Week1	Linyi Hong
+
+Summary:
+This week I have worked on using Python and tkinter, and worked out a simple example, which can be view in 'Code folder/wk01_example.py'
+Here are some information that may helps you:
+Locate a file and get the path		use	tkinter.filedialog
+Draw a Table 				use	tkinter.ttk.Treeview
+(ttk is in tkinter and there are more cool things we can use in ttk)
+
+Issue:
+1. For me, tkinter is not friendly enough to build a table. If anyone got how to highlight or change the background for specific section under inputing some filtering information, please teach me how to do that.
+2. Still need to study how to build a readable and re-used code.
+3. We need to build a effective filter to search all kinds of data that may input.
+
+Data:
+Check under 'Code/wk01_example.py'
+
+Next Week:
+1. Try to build a table that can highlight under specific situation
+2. Find another way for the filter.
