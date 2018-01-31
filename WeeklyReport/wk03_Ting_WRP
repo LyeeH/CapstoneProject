@@ -1,0 +1,21 @@
+WeeklyReport
+Jan 20, 2018	Week3	Ting Wang
+I remembered I have write a simple one on Sunday last week, but it didn't show here. Maybe I forgot to press the submit button before I closed the window Sorry about that!
+
+Summary:
+This week, I made mistakes about the task this week. Thus, I just began to do my task at last two days. 
+My task is Finding the path details report from QOR's WNS. I just do some research about how to search by keywork in input file
+
+
+Issue:
+1.DO I need to determine which one is the worst margin in the QOR?  How?
+2.To make sure what I need to do is to search by keywords in the report and can print out the special part, right?
+3.I need to make the part as a function or class, which can be easy to be called, right?
+4.the step 3 is "Show that single path from Startpoint till slack" what does the "show" mean?  I need to show it in the GUI window directly?   Or I need to make a table in the GUI window to show it?
+
+Next Week:
+Continute to complete the task "Finding the path details report from QOR's WNS"
+step:
+1.Start from a path group and find the Critical Path Slack
+2.Then, from the QORs_Detailed_Timing_Report file, find the Path Group and the Slack that matches with that from QOR report file.
+3.Show that single path from Startpoint till slack
