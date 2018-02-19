@@ -1,0 +1,87 @@
+#Find the number of times each cell appears in that report
+#C:\Users\Administrator\Desktop\QORs_Detailed_Timing_Report
+
+import linecache
+import re
+
+#file=input("The object file:")
+
+file_object=open("C:/Users/Administrator/Desktop/QORs_Detailed_Timing_Report")
+
+file_context=file_object.read()
+file_context_1=file_object.readline()
+#print(file_context)
+s=file_context.split('\n')
+
+#将所有带有门的行找到存进矩阵
+#find all the line with gates
+gate_line_array=[]
+for gate_line in s:
+    if re.search(r'.*(\([A-Z0-9]*\))\s*(\d\.\d\d\d)\s*(\d\.\d\d\d)\s*(\d\.\d\d\d)\s*(\d\.\d\d\d).*',gate_line):
+        #print(gate_line)
+        gate_line_array.append(gate_line)
+    #print(gate_line_array.sort())
+
+#将所有门提出存进矩阵
+#find all the gate and put them into an array
+gate_name_array=[]
+for gate_name in gate_line_array:
+    gate_name_1=re.findall('.*\(.*\)',gate_name)
+    #print(gate_name_1)
+    gate_name_array.append(gate_name_1)
+#print(gate_name_array)
+
+#将门进行排序
+#sort the gate by name
+gate_name_array.sort()
+#print(gate_name_array)
+
+#计算每个门出现了几次
+#calculate how many times does the gate show
+h=[]
+for i in gate_name_array:
+    h.append(gate_name_array.count(i))
+#print(h)
+
+
+#计算slack为负数的和，一小块一小块报告的
+#calculate the negative slack
+neslack=''
+total_s=0.000
+t=file_context.split('\n\n\n')
+for str0 in t:
+    if re.search('slack.*\-[0-9]+',str0):
+        slack=re.findall('slack.*(\-.*)',str0)
+        print(slack)
+        #print(float(slack.group(1)))
+        for i in slack:
+            total_s=total_s+float(i)
+#print(total_s)
+
+
+#计算total delay/每一个门的
+#calculate total delay        
+gate_line_1=[]
+gate_line_name=[]
+for gate_line in s:
+    if re.search(r'.*(\([A-Z0-9]*\))\s*(\d\.\d\d\d)\s*(\d\.\d\d\d)\s*(\d\.\d\d\d)\s*(\d\.\d\d\d).*',gate_line):
+        gate_line_1.append(gate_line)
+#print(gate_line_1)
+gate_line_1.sort()
+#print(gate_line_1)
+total_delay_array=[]       
+for c in gate_line_1:
+    a=re.search(r'.*(\([A-Z0-9]*\))\s*(-?\d\.\d\d\d)\s*(-?\d\.\d\d\d)\s*(-?\d\.\d\d\d)\s*(-?\d\.\d\d\d).*',c)
+    s=a.groups()
+    s=list(s)
+    #print(s)
+    column_2=s[len(s)-3]
+    column_3=s[len(s)-2]
+    #print(s[len(s)-3])
+    total_delay=float(column_2)+float(column_3)
+    total_delay_array.append(total_delay)
+#print(total_delay_array)
+
+        
+print("The cell names %s\n their delays in -ve paths is %s\n and the total -ve slack in all paths is %s\n the cells appear and how many times the cells appeared is %s\n."
+    %(gate_name_array,total_s,total_delay_array,h))
