@@ -1,0 +1,15 @@
+Weekly Report
+Ting Wang        Feb 25,2018       Week 7
+
+Summary:
+This week, I am still working on the design the GUI part of my task using tkinter.
+There are some questions I haven't solve, thus I don't have a complete work for this week.
+I found some information about Javascript. It must say that the GUI work using Javascript have a good looking.
+But it needs the knowledge about HTML. I haven't learned it before. I may spend more time on learn it if we decide to use Javascript
+
+Issue:
+For some cell in the paths, there are no data for cap or trans. It is haed take the space out using re library.
+
+Next week:
+1. I must finish the task next week.
+2. Maybe search more information about javascript and learn it.
