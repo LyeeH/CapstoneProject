@@ -1,0 +1,27 @@
+Weekly Report
+Linyi Hong        Feb 25, 2018    Week 7
+
+Summary:
+This week I searched something about JavaScript and also focused on fixing code bug and make it more clear.
+I also use pandas to do the sort function, and it seems cool.
+
+About JS:
+I google JS and ask other people about using JS as GUI and python as data analysis. It seems we need to learn a lot
+if we transfer our GUI to JS. In order to use JS, we also need to learn HTML and CSS. And JS is based on browser, so
+we need to struggle with browser and localhost stuff too since we use python in the back-end.
+
+About Other Python GUI library:
+There are several good GUI library that python offer. However, the one I am looking for only opensource for indiviual usage,
+called PyQt. Other GUI offer pretty much the same function as Tkinter and I did not focus on that too much.
+
+For Tkinter, Tktable, and pandas:
+1. Fixed the red background problem, so it will not turn red anymore!
+2. pandas is a opensource data analysis library that Python offer, which is very powerful. My code use pandas now, but still not done.
+     i) Basically pandas offer a back-end table, and I do sort or analyze on that table.
+     ii) The show-up table based on the back-end table, so if double click the title, the back-end table will be sorted, and 
+        send the data to update the front-end table (the show-up table).
+     iii) pandas can do more powerful things, like calculated sum, std, ave, min, max and soon, and it also easy to use with 
+          matplotlib.
+          
+Next week:
+I will still focus on pandas and combine all the function into one interface. Of course, it based on we still using Tk not JS.
