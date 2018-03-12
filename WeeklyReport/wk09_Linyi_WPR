@@ -1,0 +1,13 @@
+Weekly Report
+Linyi Hong     Mar 12, 2018    Week 9
+
+Summary:
+For week 9 and week 10, I am more focus on the final exam.
+I spent some time on exploring regular experssion this week, and come out with an idea about how to finish 
+the task with Xiaoqiao. We probabily will finish the test in several day after the finial exam.
+
+Issue:
+I have noticed that some of the startpoint and endpoint have some addition information, for example,
+  Startpoint: wdata[0] (... from rclk)
+  Endpoirnt: rempty[0][0] (... from wclk)
+Does the table need to show the content in '()'?
