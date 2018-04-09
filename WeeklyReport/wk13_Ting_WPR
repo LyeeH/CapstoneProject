@@ -1,0 +1,15 @@
+
+Weekly Report
+Ting Wang        Apr.8,2018       Week 13
+
+Summary:
+To use tktable, I install a linux system on my taplap. I wasted too much time on solving hardware problem and were familiar with linux.
+I planed for this week:
+1. improve my task 1 GUI window:
+  make one GUI windows to let users import the used files-->show the QOR report with the GUI table format(tktable)
+  -->connected  a command to show the detailed report with every slack-->show the detailed report with tktable
+2.improve my task 2:
+  show the comparison table with tktable.
+I wasted too much time to make the previous code fit the Linux system. I only completed the first branch of my fist plan and draw a table with pandas in backstage, but I haven't show the table on the GUI, because I was not familiar with tktable. 
+I overestimate my ability.
+Task continuing...
