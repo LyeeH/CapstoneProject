@@ -1,0 +1,12 @@
+
+Weekly Report
+Ting Wang         May 7, 2018      Week 17
+
+Summary:
+This week, I worked on being familiar with wxpython. I wasted some time 
+to solve the problem of importing wx.grid, which is used to build GUI table, under Linux system. After getting the help of Linyi,
+I solved the problem by install the prerequisites packages. Because I read and understand the documentation, the process is going forward slowly.
+I didn't finish converting my code to wxpyhton version.
+
+Next week:
+Finish converting all my code to wxpython version.
